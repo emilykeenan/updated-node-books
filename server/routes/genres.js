@@ -17,24 +17,11 @@ router.get('/:genre', function(req, res) {
 
     client.query('SELECT * FROM books WHERE genre = $1',
     [genre],
-     function(err, result) {
+    function(err, result) {
 
       done(); // close the connection.
-
-
-          if (err) {
-            console.log('sort error: ', err);
-            res.sendStatus(500);
-          } else {
-            res.send(result.rows);
-            res.sendStatus(201);
-          }
-
-
-
-
+      res.send(result.rows);
     });
-
   });
 });
 
