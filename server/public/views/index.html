@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="styles/styles.css"  />
   </head>
   <body>
-    <main class="container">
-      <header>
+    <main class="container-fluid">
+      <header class="jumbotron">
         <h1>The Sigmanauts Library presents...</h1>
       </header>
-      <h2>Add a book</h2>
       <form id="book-form">
+        <h2>Add a book</h2>
         <div class="form-group">
           <label for="title">Title:</label>
           <input type="text" id="title" name="title" class="form-control" />
@@ -47,8 +47,8 @@
 
         <button id="book-submit" class="btn btn-default">Go</button>
       </form>
-
-      <h2>Books</h2>
+      <div id="selector">
+      <h2>Select by Genre</h2>
       <select id="select-genre">
         <option class="genre" value="SciFi">Science Fiction</option>
         <option class="genre" value="fantasy">Fantasy</option>
@@ -57,7 +57,8 @@
         <option class="genre" value="non-fiction">Non-Fiction</option>
       </select>
       <button id="genre-submit" class="btn btn-default">Sort Books by Genre</button>
-      <ul id="book-list">
+    </div>
+      <ul id="book-list" class="container-fluid">
 
       </ul>
     </main>
