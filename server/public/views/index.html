@@ -5,11 +5,12 @@
     <script src="vendor/jquery.min.js"></script>
     <script src="scripts/client-app.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Taviraj" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="vendor/bootstrap.min.css" />
     <link rel="stylesheet" href="styles/styles.css"  />
   </head>
   <body>
-    <main class="container-fluid">
+    <main class="row fullWidth">
       <header class="jumbotron">
         <h1>The Sigmanauts Library presents...</h1>
       </header>
@@ -47,9 +48,9 @@
 
         <button id="book-submit" class="btn btn-default">Go</button>
       </form>
-      <div id="selector">
+      <div id="selector" class="text-center">
       <h2>Select by Genre</h2>
-      <select id="select-genre">
+      <select id="select-genre" class="selectpicker">
         <option class="genre" value="SciFi">Science Fiction</option>
         <option class="genre" value="fantasy">Fantasy</option>
         <option class="genre" value="historical-fiction">Historical Fiction</option>
